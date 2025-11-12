@@ -1,0 +1,35 @@
+gitignore
+# Archivos de build y temporales de Gradle
+.gradle/
+build/
+**/build/
+local.properties
+.idea/
+*.iml
+*.hprof
+
+# Archivos de compilación de KSP y otros generados
+**/ksp/
+**/generated/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Paquetes de aplicación
+*.apk
+*.aab
+*.ap_
+
+# Archivos sensibles (nunca subas tus claves de firma)
+*.keystore
+*.jks
+keystore.properties
+
+# Archivos de caché del IDE
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
