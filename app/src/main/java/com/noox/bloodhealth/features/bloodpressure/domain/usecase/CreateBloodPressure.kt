@@ -6,6 +6,6 @@ import com.noox.bloodhealth.features.bloodpressure.domain.model.BloodPressure
 class CreateBloodPressure(
     private val repository: BloodPressureRepository
 ) {
-    operator fun invoke(bloodPressure: BloodPressure): Unit =
+    suspend operator fun invoke(bloodPressure: BloodPressure): Unit =
         repository.create(bloodPressure)
 }

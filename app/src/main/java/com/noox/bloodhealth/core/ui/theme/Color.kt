@@ -12,4 +12,7 @@ val Pink40 = Color(0xFF7D5260)
 
 val CherryBlossomDark = Color(0xFF590D22)
 val CherryBlossom = Color(0xFFFF4D6D)
-val CherryBlossomLight = Color(0xFFFFCCD5)
+val CherryBlossomLight = Color(0xFFffcad3)
+
+val GreyDark = Color(0xFF181725)
+val GreyLight = Color(0xFFF2F2F2)

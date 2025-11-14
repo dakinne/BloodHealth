@@ -10,18 +10,18 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface BloodPressureDao {
 
-    @Query("SELECT * FROM bloodpressure")
+    @Query("SELECT * FROM bloodpressure ORDER BY uid DESC")
     fun getAll(): Flow<List<BloodPressureEntity>>
 
     @Query("SELECT * FROM bloodpressure WHERE uid = :uid")
-    fun findById(uid: Int): BloodPressureEntity
+    suspend fun findById(uid: Int): BloodPressureEntity
 
     @Insert
-    fun insert(bloodPressure: BloodPressureEntity)
+    suspend fun insert(bloodPressure: BloodPressureEntity)
 
     @Update
-    fun update(bloodPressure: BloodPressureEntity)
+    suspend fun update(bloodPressure: BloodPressureEntity)
 
     @Delete
-    fun delete(bloodPressure: BloodPressureEntity)
+    suspend fun delete(bloodPressure: BloodPressureEntity)
 }

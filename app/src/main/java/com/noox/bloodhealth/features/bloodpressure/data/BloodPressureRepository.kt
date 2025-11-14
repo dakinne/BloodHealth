@@ -10,6 +10,6 @@ class BloodPressureRepository(
     fun getAll(): Flow<List<BloodPressure>> =
         dao.getAll().map { it.toModel() }
 
-    fun create(bloodPressure: BloodPressure) =
+    suspend fun create(bloodPressure: BloodPressure) =
         dao.insert(bloodPressure.toEntity())
 }
